@@ -1,0 +1,15 @@
+#MAKEFILE
+CC=gcc
+
+all: check_pid
+
+check_pid: check_pid.c
+	$(CC) -o check_pid check_pid.c
+
+.PHONY: clean
+
+clean:
+	-rm check_pid
+
+
+
